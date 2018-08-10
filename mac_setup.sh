@@ -40,6 +40,10 @@ brew install git
 npm install -g serverless
 npm install -g svgo
 
+# YARN
+brew update
+brew install yarn --without-node
+
 # MONGO
 brew update && brew cask update && brew doctor
 brew install mongo

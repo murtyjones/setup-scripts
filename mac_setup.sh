@@ -115,3 +115,6 @@ brew install heroku-toolbelt
 # SLACK
 brew update && brew cask update && brew doctor
 brew cask install slack
+
+# neat aliases
+echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile

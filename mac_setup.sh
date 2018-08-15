@@ -44,6 +44,10 @@ npm install -g svgo
 brew update
 brew install yarn --without-node
 
+# AWSCLI
+brew update
+brew install awscli
+
 # MONGO
 brew update && brew cask update && brew doctor
 brew install mongo

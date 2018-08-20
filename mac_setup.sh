@@ -124,5 +124,10 @@ brew install heroku-toolbelt
 brew update && brew cask update && brew doctor
 brew cask install slack
 
-# neat aliases
+# AVAST SECURITY
+brew update && brew cask update && brew doctor
+brew cask install avast-security
+
+
+######## Cool Aliases:
 echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile

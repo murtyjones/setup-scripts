@@ -135,3 +135,4 @@ echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile
 
 defaults write com.apple.Dock autohide-delay -float 0.01 && killall Dock
 defaults write com.apple.dock autohide-time-modifier -int 0 && killall Dock
+defaults write com.apple.dock mru-spaces -bool false && killall Dock

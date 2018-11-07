@@ -131,6 +131,7 @@ brew cask install avast-security
 
 ######## Cool Aliases and Mac customizations:
 echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile
+echo "alias stop-containers='docker stop $(docker ps -aq)'"  >> ~/.bash_profile
 
 
 defaults write com.apple.Dock autohide-delay -float 0.01 && killall Dock

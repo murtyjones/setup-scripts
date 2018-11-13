@@ -128,6 +128,10 @@ brew cask install slack
 brew update && brew cask update && brew doctor
 brew cask install avast-security
 
+# TERRAFORM
+brew update && brew cask update && brew doctor
+brew install terraform
+
 
 ######## Cool Aliases and Mac customizations:
 echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile

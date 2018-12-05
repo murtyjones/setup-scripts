@@ -132,6 +132,9 @@ brew cask install avast-security
 brew update && brew cask update && brew doctor
 brew install terraform
 
+# Auto switch node version using avn as possible
+npm install -g avn avn-nvm avn-n
+avn setup
 
 ######## Cool Aliases and Mac customizations:
 echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile

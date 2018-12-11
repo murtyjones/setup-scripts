@@ -7,7 +7,7 @@ alias python=python3
 alias pip=pip3
 alias py=python3
 alias venv='source env/bin/activate'
-
+alias kill-3000='lsof -ti:3000 | xargs kill'
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

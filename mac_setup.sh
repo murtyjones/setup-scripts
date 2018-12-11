@@ -145,6 +145,7 @@ echo "alias python=python3" >> ~/.bash_profile
 echo "alias pip=pip3" >> ~/.bash_profile
 echo "alias py=python3" >> ~/.bash_profile
 echo "alias venv='source env/bin/activate'" >> ~/.bash_profile
+echo "lsof -ti:3000 | xargs kill" >> ~/.bash_profile
 
 defaults write com.apple.Dock autohide-delay -float 0.01 && killall Dock
 defaults write com.apple.dock autohide-time-modifier -int 0 && killall Dock

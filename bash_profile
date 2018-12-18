@@ -8,6 +8,8 @@ alias pip=pip3
 alias py=python3
 alias venv='source env/bin/activate'
 alias kill-3000='lsof -ti:3000 | xargs kill'
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

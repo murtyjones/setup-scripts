@@ -132,6 +132,11 @@ brew cask install avast-security
 brew update && brew cask update && brew doctor
 brew install terraform
 
+# JAVA
+brew update
+brew cask install java
+
+
 # Auto switch node version using avn as possible
 npm install -g avn avn-nvm avn-n
 avn setup

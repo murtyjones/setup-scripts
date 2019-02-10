@@ -146,6 +146,10 @@ brew install go
 go get golang.org/x/tools/cmd/godoc
 go get github.com/golang/lint/golint
 
+# VSCODE
+brew cask install visual-studio-code
+# VSCODE EXTENSIONS
+code --install-extension ms-vscode.Go
 
 # Auto switch node version using avn as possible
 npm install -g avn avn-nvm avn-n

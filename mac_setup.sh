@@ -136,6 +136,16 @@ brew install terraform
 brew update
 brew cask install java
 
+# GOLANG
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
+brew install go
+go get golang.org/x/tools/cmd/godoc
+go get github.com/golang/lint/golint
+
 
 # Auto switch node version using avn as possible
 npm install -g avn avn-nvm avn-n

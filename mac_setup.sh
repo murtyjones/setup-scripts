@@ -151,6 +151,15 @@ brew cask install visual-studio-code
 # VSCODE EXTENSIONS
 code --install-extension ms-vscode.Go
 
+# SEQUAL PRO
+brew cask install sequel-pro
+
+# ALFRED
+brew cask install alfred
+
+# JUMPCUT
+brew cask install jumpcut
+
 # Auto switch node version using avn as possible
 npm install -g avn avn-nvm avn-n
 avn setup

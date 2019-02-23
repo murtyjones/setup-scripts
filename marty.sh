@@ -12,7 +12,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 8.9.5
 nvm alias default 8.9.5
 
-# Git
+# GIT
 brew install git
 
 # NPM GLOBAL PACKAGES
@@ -24,11 +24,9 @@ brew update
 brew install yarn --without-node
 
 # AWSCLI
-brew update
 brew install awscli
 
 # MONGO
-brew update && brew cask update && brew doctor
 brew install mongo
 
 # ATOM

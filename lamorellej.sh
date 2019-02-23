@@ -23,3 +23,6 @@ brew cask install mailplane
 
 # ShiftIt
 brew cask install shiftit
+
+$ Slackl
+brew cask install slack

@@ -2,27 +2,7 @@
 
 # First, make sure you have the latest MacOS version
 # and are logged in to your apple account just in case.
-
-# Next, follow these manual steps
-
-# INSTALL XCODE
-# xcode-select --install
-
-# INSTALL HOMEBREW
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# DISABLE RVM INSTALLING A RIDICULOUS AMOUNT OF DOCUMENTATION
-# echo "gem: --no-document" >> ~/.gemrc
-
-# RVM + RAILS
-# curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
-
-# RESTART YOUR TERMINAL, then run:
-# brew update
-# sudo chown murtyjones ~/.bashrc
-# sudo chown murtyjones ~/.profile
-# `bash mac_setup.sh`
-# ...and wait. You may need to enter your password several times
+# Complete the readme steps before running this file.
 
 # NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash

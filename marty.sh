@@ -32,8 +32,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 8.9.5
 nvm alias default 8.9.5
 
-# INSTALL GIT
-brew update && brew cask update && brew doctor
+# Git
 brew install git
 
 # NPM GLOBAL PACKAGES
@@ -53,87 +52,60 @@ brew update && brew cask update && brew doctor
 brew install mongo
 
 # ATOM
-brew update && brew cask update && brew doctor
 brew cask install atom
 
 # CHROME
-brew update && brew cask update && brew doctor
 brew cask install google-chrome
 
 # FIREFOX
-brew update && brew cask update && brew doctor
 brew cask install firefox
 
 # JETBRAINS TOOLBOX
-brew update && brew cask update && brew doctor
 brew cask install jetbrains-toolbox
 
 # STUDIO 3T
-brew update && brew cask update && brew doctor
 brew cask install studio-3t
 
 # GITHUB DESKTOP
-brew update && brew cask update && brew doctor
 brew cask install github
 
 # DOCKER
-brew update && brew cask update && brew doctor
 brew cask install docker
 
 # ZOOM
-brew update && brew cask update && brew doctor
 brew cask install zoom
 
 # SKYPE
-brew update && brew cask update && brew doctor
 brew cask install skype
 
 # POSTMAN
-brew update && brew cask update && brew doctor
 brew cask install postman
 
 # VIRTUALBOX
-brew update && brew cask update && brew doctor
 brew cask install virtualbox
 
 # VAGRANT
-brew update && brew cask update && brew doctor
 brew cask install vagrant
 
 # BOOM
-brew update && brew cask update && brew doctor
 brew cask install boom
 
-# BOOM
-brew update && brew cask update && brew doctor
-brew cask install boom   
-
 # BETTERTOUCHTOOL
-brew update && brew cask update && brew doctor
 brew cask install bettertouchtool
 
 # SPOTIFY
-brew update && brew cask update && brew doctor
 brew cask install spotify
 
-# HEROKU
-brew update && brew cask update && brew doctor
+# HEROKU TOOLBELT
 brew install heroku-toolbelt
 
 # SLACK
-brew update && brew cask update && brew doctor
 brew cask install slack
 
-# AVAST SECURITY
-brew update && brew cask update && brew doctor
-brew cask install avast-security
-
 # TERRAFORM
-brew update && brew cask update && brew doctor
 brew install terraform
 
 # JAVA
-brew update
 brew cask install java
 
 # GOLANG
@@ -148,10 +120,11 @@ go get github.com/golang/lint/golint
 
 # VSCODE
 brew cask install visual-studio-code
+
 # VSCODE EXTENSIONS
 code --install-extension ms-vscode.Go
 
-# SEQUAL PRO
+# SEQUEL PRO
 brew cask install sequel-pro
 
 # ALFRED
@@ -160,11 +133,11 @@ brew cask install alfred
 # JUMPCUT
 brew cask install jumpcut
 
-# Auto switch node version using avn as possible
+# Auto switch node version using avn when possible
 npm install -g avn avn-nvm avn-n
 avn setup
 
-######## Cool Aliases and Mac customizations:
+######## Custom Aliases:
 echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile
 echo "alias stop-ctrs='docker stop \$(docker ps -aq)'"  >> ~/.bash_profile
 echo "alias rm-ctrs='docker rm \$(docker ps -aq)'"  >> ~/.bash_profile
@@ -175,6 +148,7 @@ echo "alias py=python3" >> ~/.bash_profile
 echo "alias venv='source env/bin/activate'" >> ~/.bash_profile
 echo "alias kill-3000='lsof -ti:3000 | xargs kill'" >> ~/.bash_profile
 
+######## Custom preferences for things like Dock
 defaults write com.apple.Dock autohide-delay -float 0.01 && killall Dock
 defaults write com.apple.dock autohide-time-modifier -int 0 && killall Dock
 defaults write com.apple.dock mru-spaces -bool false && killall Dock

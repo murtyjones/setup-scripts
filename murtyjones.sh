@@ -131,15 +131,36 @@ echo "alias kill-3000='lsof -ti:3000 | xargs kill'" >> ~/.bash_profile
 
 ######## Custom macOS preferences
 # Remove dock autohide animation and make it more responsive when you hover over it.
-defaults write com.apple.Dock autohide-delay -float 0.01; killall Dock
-defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+defaults write com.apple.Dock autohide-delay -float 0.01
+defaults write com.apple.dock autohide-time-modifier -int 0
 # Prevent spaces being rearranged
-defaults write com.apple.dock mru-spaces -bool false; killall Dock
+defaults write com.apple.dock mru-spaces -bool false
 # Add "quit" option to Finder
-defaults write com.apple.finder QuitMenuItem -bool true; killall Finder
+defaults write com.apple.finder QuitMenuItem -bool true
 # Only show one application and its windows at a time. Hide all others.
-defaults write com.apple.dock single-app -bool true; killall Dock
-# Dark mode for Finder
-defaults write -g NSWindowDarkChocolate -bool TRUE; killall Finder
+defaults write com.apple.dock single-app -bool true
+# Speed up mission control animations
+defaults write com.apple.dock expose-animation-duration -float 0.12
+# Stop Full Names from Copying with Email Addresses in OS X Mail
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+# Make Hidden App Icons Translucent in the Dock
+defaults write com.apple.Dock showhidden -bool YES
+# Make hidden files viewable in finder
+defaults write com.apple.finder AppleShowAllFiles -bool YE
+# Show system info from login screen
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+# Disable animations when opening and closing windows.
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+# Disable animations when opening a Quick Look window.
+defaults write -g QLPanelAnimationDuration -float 0
+# Disable Mail animations
+defaults write com.apple.mail DisableReplyAnimations -bool true
+defaults write com.apple.mail DisableSendAnimations -bool true
+# Disable animation when opening the Info window in Finder (cmd⌘ + i).
+defaults write com.apple.finder DisableAllAnimations -bool true
+# Disable animations when you open an application from the Dock.
+defaults write com.apple.dock launchanim -bool false
 
-
+# restart Dock and Finder
+killall Dock
+killall Finder

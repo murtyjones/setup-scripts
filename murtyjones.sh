@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# First, make sure you have the latest MacOS version
-# and are logged in to your apple account just in case.
-# Complete the readme steps before running this file.
-
 # NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
@@ -12,81 +8,78 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 8.9.5
 nvm alias default 8.9.5
 
-# GIT
+# Git
 brew install git
 
-# NPM GLOBAL PACKAGES
-npm install -g serverless
-npm install -g svgo
+# avm packagr – Auto switch node version when possible
+npm install -g avn avn-nvm avn-n
+avn setup
 
-# YARN
+# Yarn
 brew update
 brew install yarn --without-node
 
-# AWSCLI
+# AWS CLI
 brew install awscli
 
-# MONGO
+# Mongo
 brew install mongo
 
-# ATOM
+# Atom
 brew cask install atom
 
-# CHROME
+# Google Chrome
 brew cask install google-chrome
 
-# FIREFOX
+# Firefox
 brew cask install firefox
 
-# JETBRAINS TOOLBOX
+# JetBrains Toolbox
 brew cask install jetbrains-toolbox
 
-# STUDIO 3T
+# Studio 3T
 brew cask install studio-3t
 
-# GITHUB DESKTOP
+# GitHub Desktop
 brew cask install github
 
-# DOCKER
+# Docker
 brew cask install docker
 
-# ZOOM
+# Zoom
 brew cask install zoom
 
-# SKYPE
+# Skype
 brew cask install skype
 
-# POSTMAN
+# Postman
 brew cask install postman
 
-# VIRTUALBOX
+# VirtualBox
 brew cask install virtualbox
 
-# VAGRANT
+# Vagrant
 brew cask install vagrant
 
-# BOOM
-brew cask install boom
-
-# BETTERTOUCHTOOL
+# BetterTouchTool
 brew cask install bettertouchtool
 
-# SPOTIFY
+# Spotify
 brew cask install spotify
 
-# HEROKU TOOLBELT
+# Heroku Toolbelt
 brew install heroku-toolbelt
 
-# SLACK
+# Slack
 brew cask install slack
 
-# TERRAFORM
+# Terraform
 brew install terraform
 
-# JAVA
+# Java
 brew cask install java
 
-# GOLANG
+# Golang
 export GOPATH="${HOME}/.go"
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
@@ -96,27 +89,23 @@ brew install go
 go get golang.org/x/tools/cmd/godoc
 go get github.com/golang/lint/golint
 
-# VSCODE
+# VSCode
 brew cask install visual-studio-code
 
-# VSCODE EXTENSIONS
+# VSCode Extensions
 code --install-extension ms-vscode.Go
 
-# SEQUEL PRO
+# Sequel Pro
 brew cask install sequel-pro
 
-# ALFRED
+# Alfred
 brew cask install alfred
 
-# JUMPCUT
+# Jumpcut
 brew cask install jumpcut
 
-# MAILPLANE
+# Mailplane
 brew cask install mailplane
-
-# Auto switch node version using avn when possible
-npm install -g avn avn-nvm avn-n
-avn setup
 
 ######## Custom Aliases:
 echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile

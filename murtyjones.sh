@@ -111,6 +111,9 @@ brew cask install alfred
 # JUMPCUT
 brew cask install jumpcut
 
+# MAILPLANE
+brew cask install mailplane
+
 # Auto switch node version using avn when possible
 npm install -g avn avn-nvm avn-n
 avn setup
@@ -126,7 +129,17 @@ echo "alias py=python3" >> ~/.bash_profile
 echo "alias venv='source env/bin/activate'" >> ~/.bash_profile
 echo "alias kill-3000='lsof -ti:3000 | xargs kill'" >> ~/.bash_profile
 
-######## Custom preferences for things like Dock
-defaults write com.apple.Dock autohide-delay -float 0.01 && killall Dock
-defaults write com.apple.dock autohide-time-modifier -int 0 && killall Dock
-defaults write com.apple.dock mru-spaces -bool false && killall Dock
+######## Custom macOS preferences
+# Remove dock autohide animation and make it more responsive when you hover over it.
+defaults write com.apple.Dock autohide-delay -float 0.01; killall Dock
+defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+# Prevent spaces being rearranged
+defaults write com.apple.dock mru-spaces -bool false; killall Dock
+# Add "quit" option to Finder
+defaults write com.apple.finder QuitMenuItem -bool true; killall Finder
+# Only show one application and its windows at a time. Hide all others.
+defaults write com.apple.dock single-app -bool true; killall Dock
+# Dark mode for Finder
+defaults write -g NSWindowDarkChocolate -bool TRUE; killall Finder
+
+

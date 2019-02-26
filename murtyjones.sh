@@ -107,6 +107,9 @@ brew cask install jumpcut
 # Mailplane
 brew cask install mailplane
 
+# FireCode font
+brew cask install font-fira-code
+
 ######## Custom Aliases:
 echo "alias gogit='cd ~/Documents/GitHub'" >> ~/.bash_profile
 echo "alias stop-ctrs='docker stop \$(docker ps -aq)'"  >> ~/.bash_profile
@@ -135,7 +138,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Make Hidden App Icons Translucent in the Dock
 defaults write com.apple.Dock showhidden -bool YES
 # Make hidden files viewable in finder
-defaults write com.apple.finder AppleShowAllFiles -bool YE
+defaults write com.apple.finder AppleShowAllFiles -bool YES
 # Show system info from login screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 # Disable animations when opening and closing windows.

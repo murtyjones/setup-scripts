@@ -11,14 +11,6 @@ nvm alias default 8.9.5
 # Git
 brew install git
 
-# avm packagr – Auto switch node version when possible
-npm install -g avn avn-nvm avn-n
-avn setup
-
-# Yarn
-brew update
-brew install yarn --without-node
-
 # AWS CLI
 brew install awscli
 
@@ -37,9 +29,6 @@ brew cask install firefox
 # JetBrains Toolbox
 brew cask install jetbrains-toolbox
 
-# Studio 3T
-brew cask install studio-3t
-
 # GitHub Desktop
 brew cask install github
 
@@ -48,9 +37,6 @@ brew cask install docker
 
 # Zoom
 brew cask install zoom
-
-# Skype
-brew cask install skype
 
 # Postman
 brew cask install postman

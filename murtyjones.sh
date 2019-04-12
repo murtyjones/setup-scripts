@@ -113,6 +113,12 @@ echo "alias kill-3000='lsof -ti:3000 | xargs kill'" >> ~/.bash_profile
 echo "alias ls-hidden='ls -ld .?*'" >> ~/.bash_profile
 echo "alias tf='terraform'" >> ~/.bash_profile
 
+# birb
+alias gobirb='cd ~/birb'
+
+# martyjon.es
+alias gomj='cd ~/martyjon.es'
+
 ######## Custom macOS preferences
 # Remove dock autohide animation and make it more responsive when you hover over it.
 defaults write com.apple.Dock autohide-delay -float 0.01

@@ -105,6 +105,9 @@ alias gobirb='cd ~/birb'
 # martyjon.es
 alias gomj='cd ~/martyjon.es'
 
+# Make
+alias mk='make'
+
 ######## Custom macOS preferences
 # Remove dock autohide animation and make it more responsive when you hover over it.
 defaults write com.apple.Dock autohide-delay -float 0.01

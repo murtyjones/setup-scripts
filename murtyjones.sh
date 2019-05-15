@@ -117,7 +117,7 @@ defaults write com.apple.dock mru-spaces -bool false
 # Add "quit" option to Finder
 defaults write com.apple.finder QuitMenuItem -bool true
 # Only show one application and its windows at a time. Hide all others.
-defaults write com.apple.dock single-app -bool true
+defaults write com.apple.dock single-app -bool false
 # Speed up mission control animations
 defaults write com.apple.dock expose-animation-duration -float 0.12
 # Stop Full Names from Copying with Email Addresses in OS X Mail

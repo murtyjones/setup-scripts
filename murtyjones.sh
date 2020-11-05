@@ -1,89 +1,29 @@
 #!/bin/sh
 
-# NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-nvm install 8.9.5
-nvm alias default 8.9.5
-
-# Git
 brew install git
-
-# AWS CLI
 brew install awscli
-
-# Mongo
-brew install mongo
-
-# Atom
 brew cask install atom
-
-# Google Chrome
 brew cask install google-chrome
-
-# Firefox
 brew cask install firefox
-
-# JetBrains Toolbox
 brew cask install jetbrains-toolbox
-
-# GitHub Desktop
 brew cask install github
-
-# Docker
 brew cask install docker
-
-# Zoom
 brew cask install zoom
-
-# Postman
 brew cask install postman
-
-# VirtualBox
 brew cask install virtualbox
-
-# Vagrant
 brew cask install vagrant
-
-# BetterTouchTool
 brew cask install bettertouchtool
-
-# Spotify
 brew cask install spotify
-
-# Heroku Toolbelt
 brew install heroku-toolbelt
-
-# Slack
 brew cask install slack
-
-# Terraform
 brew install terraform
-
-# Java
 brew cask install java
-
-# VSCode
 brew cask install visual-studio-code
-
-# VSCode Extensions
 code --install-extension ms-vscode.Go
-
-# Sequel Pro
 brew cask install sequel-pro
-
-# Alfred
 brew cask install alfred
-
-# Jumpcut
 brew cask install jumpcut
-
-# Mailplane
 brew cask install mailplane
-
-# FireCode font
 brew cask install font-fira-code
 
 ######## Custom Aliases:

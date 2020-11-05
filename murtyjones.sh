@@ -24,6 +24,7 @@ brew cask install sequel-pro
 brew cask install alfred
 brew cask install jumpcut
 brew cask install mailplane
+brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 
 ######## Custom Aliases:
